@@ -76,5 +76,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContactsApp\ContactsApp.csproj">
+      <Project>{ef8b99b2-58a7-4508-8687-3a0962a45020}</Project>
+      <Name>ContactsApp</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
