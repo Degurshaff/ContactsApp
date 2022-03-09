@@ -9,6 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactsApp", "ContactsApp\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{4073D98A-730F-4A8D-983D-1B63880F306E}"
 	ProjectSection(SolutionItems) = preProject
+		..\doc\kim5871.docx = ..\doc\kim5871.docx
 		G:\doc\NTvP_-_Laboratornaya_rabota_1.docx = G:\doc\NTvP_-_Laboratornaya_rabota_1.docx
 	EndProjectSection
 EndProject
