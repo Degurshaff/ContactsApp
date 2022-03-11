@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ContactsApp.Model
+namespace ContactsApp
 {
     /// <summary>
     /// содержит информацию о контакте 
