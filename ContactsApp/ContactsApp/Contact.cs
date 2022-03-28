@@ -13,34 +13,42 @@ namespace ContactsApp
         /// минимальная дата рождения
         /// </summary>
         private static readonly DateTime MinDate = new DateTime(1900, 1, 1);
+
         /// <summary>
         /// макс длина текстовых полей 
         /// </summary>
         private static readonly short MaxTextLenght = 60;
+
         /// <summary>
         /// Фмилия
         /// </summary>
         private string _lastName = "";
+
         /// <summary>
         /// Имя
         /// </summary>
         private string _firstName = "";
+
         /// <summary>
         /// ДАта рождения
         /// </summary>
         private DateTime _birthday = DateTime.Today;
+
         /// <summary>
         /// Электронная почта
         /// </summary>
         private string _email = "";
+
         /// <summary>
         /// Вконтакте
         /// </summary>
         private string _vkId = "";
+
         /// <summary>
         /// Номер телефона
         /// </summary>
         private Phone _phoneNumber = new Phone();
+
         /// <summary>
         /// Получает и возвращает номер телефона 
         /// </summary>
@@ -49,6 +57,7 @@ namespace ContactsApp
             get => _phoneNumber.Number;
             set => _phoneNumber.Number = value;
         }
+
         /// <summary>
         /// получает и возвращает дату рождения
         /// </summary>
@@ -69,6 +78,7 @@ namespace ContactsApp
             }
 
         }
+
         /// <summary>
         /// получает и возфращает фамилию
         /// </summary>
@@ -87,6 +97,7 @@ namespace ContactsApp
                 }
             }
         }
+
         /// <summary>
         /// получает и возвращает имя
         /// </summary>
@@ -105,6 +116,7 @@ namespace ContactsApp
                 }
             }
         }
+
         /// <summary>
         /// Свойство "Email" получает и возвращает E-Mail контакта.
         /// </summary>
@@ -143,6 +155,7 @@ namespace ContactsApp
         {
             return text != null && text.Length <= MaxTextLenght;
         }
+
         public bool Equals(Contact other)
         {
             return _lastName.Equals(other._lastName) &&
@@ -152,6 +165,7 @@ namespace ContactsApp
                    _vkId.Equals(other._vkId) &&
                    _phoneNumber.Equals(other._phoneNumber);
         }
+
         public object Clone()
         {
             return new Contact()

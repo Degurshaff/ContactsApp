@@ -16,11 +16,13 @@ namespace ContactsApp
         /// список контактов
         /// </summary>
         public List<Contact> Contacts { get; } = new List<Contact>();
+
         /// <summary>
         /// сортировка в алфавитном порядке
         /// </summary>
         /// <returns>Возвращает отсортированый по фамилии в алфавитном порядке список контактов</returns>
         public List<Contact> GetSorted() => Contacts.OrderBy(i => i.LastName).ToList();
+
         /// <summary>
         /// поиск по фамилии
         /// </summary>
@@ -30,6 +32,7 @@ namespace ContactsApp
         .Where(i => i.LastName.StartsWith(query))
         .OrderBy(j => j.LastName)
         .ToList();
+
         /// <summary>
         /// 
         /// </summary>
